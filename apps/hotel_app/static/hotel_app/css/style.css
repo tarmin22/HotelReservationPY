@@ -1,0 +1,54 @@
+body, html {
+    height: 100%;
+    background-image: url("/static/hotel_app/images/resort.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#logo{
+    width: 250px;
+    height: 70px;
+}
+.dropdown-toggle{
+    margin-top:20px;
+}
+a{
+    color:#B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+#footer{
+    margin-top: 407px;
+    height: 200px;
+    background-color: white; 
+}
+p{
+    color: #FFDE59;
+    font-family: 'Niramit', sans-serif;
+    margin-left: 10px;
+}
+
+#header{
+    background-color: white;
+    margin-top: -25px;
+}
+#slogan_container{
+    width: 298px;
+    margin-left: 30%;
+    margin-top: 33%;
+}
+.slogan{
+    font-family: 'Homemade Apple', cursive;
+    font-size: 20pt;
+    color:#B3B2AF;
+}
+#contact{
+    margin-left: 69%;
+    margin-top: -2%;
+    width: 400px;
+    text-align: right;
+    color: #B3B2AF;
+    font-family: 'Lora', serif;
+    font-style: italic;
+}

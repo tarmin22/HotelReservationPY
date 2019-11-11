@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Total Cost</title>
+</head>
+<body>
+    <p>Total for {{total_nights}} night(s) in {{this_room.name}} Bed with Ocean View: ${{  total  }}</p>
+    {% if request.session.reservation_id %}
+    <button><a href="/reupdate">Update with Reservation and Payment</a></button>
+    {% else %}
+    <button><a href="/payment">Continue with Reservation and Payment</a></button>
+    {% endif %}
+</body>
+</html>

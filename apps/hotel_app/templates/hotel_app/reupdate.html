@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <h1>Confirmation Page</h1>
+    <p>{{  reservation.created_by.first_name  }} {{  reservation.created_by.last_name  }}</p>
+    <p>Check In: {{request.session.check_in}}</p> 
+    <p>Check Out: {{request.session.check_out}}</p>
+    <p>{{  reservation.created_by.email }}</p>
+    <p>{{  reservation.payment_info.street  }}, {{  reservation.payment_info.city  }}, {{  request.session.state  }}, {{  request.session.zipcode  }} </p>
+    <p>{{  reservation.payment_info.credit_card_number  }}</p>
+    <p>{{  reservation.payment_info.cvv  }}</p>
+    <p>{{  reservation.payment_info.expiration_month  }}/{{  reservation.payment_info.expiration_year  }}</p>
+    <p>Room Type: {{reservation.room_type.name}} Bed with Ocean View</p>
+    <p>Nightly Rate: {{reservation.room_type.rate}}</p>
+    <p>Total Nights: {{request.session.total_nights}}</p>
+    <p>Total Cost: {{request.session.subtotal}}</p>
+    <button><a href="/delete/{{reservation.id}}">Cancel Reservation</a></button>
+    <button><a href="/update_reservation">Change Reservation</a></button>
+    <a href="/">Back to Home</a>
+</body>
+</html>

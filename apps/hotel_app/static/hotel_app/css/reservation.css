@@ -1,0 +1,27 @@
+form{
+    width: 675px;
+    margin: 0 auto;
+    margin-top: 95px;
+    font-family: 'Lora', serif;
+}
+
+h3{
+    margin-left:200px;
+}
+
+.dropdown-toggle{
+    margin-top:20px;
+}
+
+a{
+    color:#B3B2AF;
+    font-family: 'Lora', serif;
+    font-size: 12pt;
+    margin-top: 13px;
+}
+.email{
+    margin-left: -16px;
+}
+#email{
+    margin-left: -16px;
+}

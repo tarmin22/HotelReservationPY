@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rooms</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'hotel_app/css/rooms.css' %}">   
+</head>
+
+<body>
+    <ul id="header" class="nav nav-fill">
+        <img id="logo" src="{% static 'hotel_app/images/resort_logo.png' %}" />
+        <li class="nav-item">
+            <a class="nav-link active" href="/">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/rooms">ROOMS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">DINING</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">WELLNESS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">SPECIAL EVENTS</a>
+        </li>
+    </ul>
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Album example</h1>
+                <p class="lead text-muted">Something short and leading about the collection below—its contents, the
+                    creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
+                    entirely.</p>
+                <p>
+                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+                </p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="{% static 'hotel_app/images/Premier King Lake.jpg' %}" class="card-img-top"
+                                alt="..." width="250" height="200" l>
+
+                            <div class="card-body">
+                                <h5 class="card-title">King Size Bed with Ocean View</h5>
+                                <p class="card-text">750 sqft room with 180 degree ocean view with a sofa bed.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <a href="/rooms/1" class="btn btn-primary">Room Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="{% static 'hotel_app/images/Premier-Queen-Taal-Vista-Hotel-Tagaytay-Cavite-Philippines.jpg' %}"
+                                class="card-img-top" alt="..." width="250" height="200">
+                            <div class="card-body">
+                                <h5 class="card-title">Queen Beds with Ocean View</h5>
+                                <p class="card-text">750 sqft room with ocean view.</p>
+                                <br>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <a href="/rooms/2" class="btn btn-primary">Room Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <img src="{% static 'hotel_app/images/grand-deluxe-ocean-view.jpg' %}" class="card-img-top"
+                                alt="..." width="250" height="200">
+                            <div class="card-body">
+                                <h5 class="card-title">Deluxe Room with Ocean View</h5>
+                                <p class="card-text">1200 sqft room with 180 degree ocean view.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+
+                                    <a href="/rooms/3" class="btn btn-primary">Room Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p class="float-right">
+                <a href="#">Back to top</a>
+            </p>
+            <p>Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+            <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a
+                    href="/docs/4.3/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

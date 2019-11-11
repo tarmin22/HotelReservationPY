@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Current Reservation</title>
+</head>
+<body>
+    <p>Check In: {{reservation.start_date}}</p>  
+    <p>Check Out: {{reservation.end_date}}</p>
+    <p>First Name: {{reservation.created_by.first_name}}  Last Name: {{reservation.created_by.last_name}}</p>
+    <p>{{reservation.room_type.name}} Bed with Ocean View</p>
+    <p>Total Cost: {{reservation.cost}}</p>
+    <p>Reservation Made On: {{reservation.created_at}}</p>
+    <button><a href='/delete/{{reservation.id}}'>Cancel</a></button>
+    <button><a href='/edit/{{reservation.id}}'>Update</a></button>
+</body>
+</html>

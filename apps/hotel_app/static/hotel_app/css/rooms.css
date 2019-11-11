@@ -1,0 +1,34 @@
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 600px;
+
+}
+
+.img1 {
+    width: 100%;
+    height: 600px;
+}
+
+.header1{
+    color:#B3B2AF;
+    font-family: 'Lora', serif;
+    margin-top: 14px;
+}
+#header{
+    margin-top:-24px;
+}

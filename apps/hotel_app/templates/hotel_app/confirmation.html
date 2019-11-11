@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Confirmation</title>
+</head>
+<body>
+    <div>
+        {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </div>
+    <h1>Confirmation Page</h1>
+    <p>{{  request.session.first_name  }}</p>
+    <p>{{  request.session.last_name  }}</p>
+    <p>{{  request.session.email  }}</p>
+    <p>{{  request.session.street  }}, {{  request.session.city  }}, {{  request.session.state  }}, {{  request.session.zipcode  }} </p>
+    <p>{{  request.session.credit_card  }}</p>
+    <p>{{  request.session.cvv  }}</p>
+    <p>{{  request.session.month  }}/{{  request.session.year  }}</p>
+    <p>{{  request.session.cvv  }}</p>
+    <p>{{this_room.name}}</p>
+    <p>{{this_room.rate}}</p>
+    <p>{{request.session.total_nights}}</p>
+    <p>{{request.session.subtotal}}</p>
+    <button><a href="/cancel">Cancel Reservation</a></button>
+    <button><a href="/reservation">Change Reservation</a></button>
+    <button><a href="/enter_reservation">Confirm Payment</a></button>
+</body>
+</html>
